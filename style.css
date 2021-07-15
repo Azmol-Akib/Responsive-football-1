@@ -239,7 +239,7 @@ footer p {
         font-size: 36px;
         color: #ffffff;
         font-weight: bold;
-        line-height: 80px;
+        line-height: 50px;
     }
 
     .flexible-header {
@@ -346,26 +346,55 @@ footer p {
     }
 
 
-    *-------------------------- player info styles ---------------------------*/ 
+/* ----- player info styles --- */
     
-    .players {
-       
-        width: 330px;
-        height: 474px;
-        /* margin-left: 28px; */
 
-    }
+.players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-gap: 30px; */
+    width: 330px;
+    height: 474px;
+    margin-left: 25px;
+}
 
-    .player {
-        padding: 15px;
-        margin-top: 24px;
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    }
+/*------------------
+     footer styles 
+-------------------*/
+footer {
+    top: 8846px;
+}
 
-    .player img {
-        width: 300px;
-        height: 256px;
-    }
+footer img {
+    margin-top: 3880px;
+    margin-left: 51px;
+    width: 274.87px;
+    height: 68px;
+
+.media {
+    font-size: 30px;
+    margin-top: 0px;
+    color: gray;
+    display: none;
+
+}
+
+.icon {
+    margin-left: 695px;
+    color: gray;
+    display: none;
+}
+
+.media a {
+    text-decoration: none;
+    display: none;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    display: none;
+}
 
 
 }
