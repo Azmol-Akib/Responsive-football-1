@@ -118,7 +118,7 @@ p {
 }
 
 /* ---------------------------------------
-    games and features styles
+        games and features styles
 ------------------------------------------*/
 .features-area {
     margin-top: 70px;
@@ -132,7 +132,7 @@ p {
 
 .features {
     width: 720px;
-    margin-left: 35px ;
+    margin-left: 5px;
     position: relative;
     overflow: hidden;
     transition: width 2s, height 2s ease-in-out;
@@ -153,9 +153,13 @@ p {
     color: white;
 }
 
+/*------------------------
+   feature transiction
+------------------------ */
+
 .features:hover .features-detail {
     display: block;
-    background-color: rgba(223, 142, 142, 0.268);
+    background-color: rgba(151, 148, 148, 0.432);
 }
 
 .features:hover .features-photo {
@@ -164,7 +168,9 @@ p {
 
 }
 
-/* player info styles */
+/*--------------------------
+     player info styles 
+---------------------------*/
 .player-info {
     margin-top: 70px;
 }
@@ -191,28 +197,175 @@ p {
 /*------------------
      footer styles 
 -------------------*/
-footer{
+footer {
     margin-top: 1846px;
 }
-footer img{
+
+footer img {
     margin-left: 475px;
     width: 483.87px;
-height: 110px;
+    height: 110px;
 }
-.media{
-  font-size: 30px;
-  margin-top: 0px;
-  color: gray;
-   
+
+.media {
+    font-size: 30px;
+    margin-top: 0px;
+    color: gray;
+
 }
-.icon{
+
+.icon {
     margin-left: 695px;
     color: gray;
 }
-.media a{
+
+.media a {
     text-decoration: none;
 }
-footer p{
+
+footer p {
     text-align: center;
     color: black;
+}
+
+/*----------------------------
+    media queries styles
+----------------------------- */
+
+/* mobile device */
+
+@media only screen and (max-width:688px) {
+    h1 {
+        font-size: 36px;
+        color: #ffffff;
+        font-weight: bold;
+        line-height: 80px;
+    }
+
+    .flexible-header {
+        /* display: flex; */
+        background-image: url(images/header.png);
+        width: 100%;
+        height: 695px;
+        flex-direction: column;
+    }
+
+    .half-header {
+        width: 100%;
+    }
+
+    .header-text {
+        margin: 32px 66px 0 26px;
+    }
+
+    .ball {
+        width: 63px;
+        height: 56px;
+        margin-top: 112px;
+        margin-left: 35px;
+        transition: transform 1s ease-in-out .5s;
+    }
+
+    .player-kick {
+        width: 329px;
+        height: 259px;
+        margin-top: 112px;
+        margin-left: 101px;
+        transition: transform 0.5s ease-in;
+    }
+
+    .flexible-header:hover .player-kick {
+        transform: translate(-151px, -61px);
+    }
+
+    .flexible-header:hover .ball {
+        transform: translate(-860px, -328px);
+    }
+
+    /* gallery */
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 6px;
+    }
+
+    #title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* game & feature  */
+
+    .features-area {
+        margin-top: 70px;
+        background-color: rgba(248, 248, 0, 0.247);
+    }
+
+    .features-item {
+        display: flex;
+        grid-template-columns: repeat(1, fr);
+        flex-direction: column;
+    }
+
+    .features {
+        width: 320px;
+        margin-left: 30px;
+        margin-top: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: width 2s, height 2s ease-in-out;
+    }
+
+    .features-photo img {
+        width: 100%;
+
+    }
+
+    .features-detail {
+        position: absolute;
+        width: 320px;
+        top: 0;
+        margin-top: 170px;
+        text-align: center;
+        display: none;
+        color: black;
+        font-size: 10px;
+    }
+
+
+    .features:hover .features-detail {
+        display: block;
+        background-color: rgba(153, 150, 150, 0.268);
+    }
+
+    .features:hover .features-photo {
+        transform: scale(1.3);
+        transition: transform 1s ease-in;
+
+    }
+
+
+    *-------------------------- player info styles ---------------------------*/ 
+    
+    .players {
+       
+        width: 330px;
+        height: 474px;
+        /* margin-left: 28px; */
+
+    }
+
+    .player {
+        padding: 15px;
+        margin-top: 24px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .player img {
+        width: 300px;
+        height: 256px;
+    }
+
+
 }
